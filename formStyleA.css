@@ -1,0 +1,42 @@
+
+.container-user{
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  max-width: 300px;
+  overflow: hidden; 
+}
+.container-user .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  background-color: rgb(177, 175, 175);
+} 
+
+.container-user input {
+  border : none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 30px;
+  gap: 20px;
+  align-items: center;
+}
+
+.inputs-row {
+  display: flex;
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+.inputs-row p {
+  margin: 0;
+}
+.container-user:focus-within .icon {
+    background-color: rgb(12, 183, 240);
+
+  }
+.container-user:focus-within{
+    border-color: rgb(12, 183, 240); 
+  }
