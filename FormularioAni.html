@@ -38,7 +38,8 @@
     <form>
         <h1 class = "titlePayment">Payment Form</h1>
         <section>
-            <h2 class = "account">Contact information</h2>
+            <fieldset>
+                <legend class = "account">Contact Infomation</legend>
                             <div class="inputs-row">
                             <!-- Full Name -->
                             <div class="input-wrapper">
@@ -66,7 +67,7 @@
                         </div>
                      </div>
                         <!-- Email-->
-                <label for="email"><label>
+                <label for="email"></label>
                     <div class = "container-user email">
                         <span class="icon">
                             <svg width="28" height="28">
@@ -75,11 +76,35 @@
                         </span>
                          <input type="email" id ="email"name="email" placeholder="Email"/>
                     </div>
-            <div>
-                <h3 class = "DateB"> Date of Birth</h3>
 
+        <div class="date-gender row">
+            <div class="container-date"> <h3 class="DateB">Date of Birth</h3>
+                <div class="ContainerDateGender">
+                    <label for="day" class="sr-only">Day</label>
+                    <input type="text" id="day" name="day" placeholder="DD" maxlength="2" inputmode="numeric" pattern="[0-9]*">
+
+                    <label for="Month" class="sr-only">Month</label>
+                    <input type="text" id="Month" name="Month" placeholder="MM" maxlength="2" inputmode="numeric" pattern="[0-9]*">
+
+                    <label for="Year" class="sr-only">Year</label>
+                    <input type="text" id="Year" name="Year" placeholder="YYYY" maxlength="4" inputmode="numeric" pattern="[0-9]*">
+                </div>
             </div>
-            <h3> Payment Details</h2>
+
+            <div class="gender-section-wrapper"> <h3 class="DateB">Gender</h3>
+                <div class="container-date option">
+                    <div class="gender-buttons">
+                        <button type="button" class="gender-box" data-gender="male">Male</button>
+                        <button type="button" class="gender-box" data-gender="female">Female</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            </fieldset>
+
+
+            <h3> Payment Details</h3>
             <p>
                 <label for ="card">
                     <span>Card Number:</span>
