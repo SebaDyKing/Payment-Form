@@ -1,3 +1,43 @@
+form{
+  max-width: 640px;
+  margin: 80px auto;
+  padding: 20px;
+  border : 3px solid #ccc;
+  background-color: #f8f2f2;
+  
+}
+Html{
+  background-color: #c4bfbf;
+   font-family: 'Poppins', sans-serif;
+}
+
+fieldset {
+  border: none;
+  padding: 1rem 0;
+}
+
+legend {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.account{
+  margin-left: 20px;
+
+  font-size: 20px;
+  color: rgb(0, 140, 196);
+}
+
+.titlePayment{
+  display : flex;
+  width: 95%;
+  position: relative;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border : 3px solid #b6b3b3;
+   color: rgb(0, 140, 196);
+}  
 
 .container-user{
   display: flex;
@@ -5,6 +45,7 @@
   border-radius: 6px;
   max-width: 300px;
   overflow: hidden; 
+  margin-left : 20px;
 }
 .container-user .icon {
   display: flex;
@@ -23,11 +64,12 @@
   border-radius: 30px;
   gap: 20px;
   align-items: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .inputs-row {
   display: flex;
-  gap: 20px; 
+  gap: 0px; 
   flex-wrap: wrap; 
 }
 .inputs-row p {
@@ -40,3 +82,56 @@
 .container-user:focus-within{
     border-color: rgb(12, 183, 240); 
   }
+
+  .container-user.email{
+  margin-top: 10px;
+  width: 100%;
+  max-width: 91%;
+
+  }
+    
+.containerDateGender{
+  display : flex;
+  gap: 10px;
+  align-items: center;
+}
+  .ContainerDateGender input{
+    width: 30%;
+    height: 40px;
+    max-width: 87%;
+    text-align: center;
+    border : 2px solid #b6b3b3;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+  .container-date.option .gender-box{
+    width: 70%;
+    height: 40px;
+    border : 3px solid #b6b3b3;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 40px;
+}
+
+.date-gender {
+  display: flex;
+  justify-content: center; 
+  margin: 0 30px; 
+}
+
+.date-gender row {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start; 
+}
+
+
+.gender-buttons{
+  display: flex;
+  gap: 0px;
+  margin: 0 auto;
+}
+
