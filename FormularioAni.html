@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="formStyleA.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="payment-form.css" rel="stylesheet" />
+    <svg style="display: none;">
+            <!-- Icono: Persona -->
+            <symbol id="icon-user" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 100-6 3 3 0 000 6z"/>
+            </symbol>
+            <!-- Icono: Tarjeta (Card Number) -->
+            <symbol id="icon-card" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 012-2h12a2 2 0 012 2v1H0V4zm0 2h16v6a2 2 0 01-2 2H2a2 2 0 01-2-2V6zm3 3a1 1 0 100 2h2a1 1 0 100-2H3z"/>
+            </symbol>
+
+            <!-- Icono: Visa -->
+            <symbol id="icon-visa" viewBox="0 0 48 32">
+                <path d="M18 22.6h-2.6l-2.5-13.3h2.7l1.5 8.4 3.2-8.4h2.7l-4.9 13.3zm6.4-13.3h2.5l-2.1 13.3h-2.5l2.1-13.3zm10.2 6.8c-.1-.8-.8-1.2-1.7-1.2-1 0-1.8.5-1.8.5l.3-2.1c0 0 .8-.3 1.6-.3 2.1 0 3.4 1.1 3.1 3.1l-.8 5.3h-2.6l.6-3.3c.1-.7.1-1.2.1-1.2zM32.6 14l1.2-4.6h2.5l-2.1 13.3h-2.4l1-5.7-3.1 5.7h-2.6l-1.5-8.6-1.5 8.6H21l2.1-13.3h2.5l1.5 8.6L32.6 14z"/>
+            </symbol>
+
+            <!-- "Icono": PayPal (Texto como logo) -->
+            <symbol id="icon-paypal" viewBox="0 0 100 20">
+                <text x="0" y="15" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="currentColor">PayPal</text>
+            </symbol>
+            <!-- "Icono":  -->
+            <symbol id="icon-email" viewBox="0 0 24 24">
+  <path d="M2 4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H2zm0 2h20v.01L12 13 2 6.01V6zm0 2.24l8.74 5.82c.41.27.93.27 1.34 0L22 8.24V18H2V8.24z" fill="currentColor"/>
+</symbol>
+
+</svg>
+    <title>Payment form</title>
+  </head>
+  <body>
+    <form>
+        <h1 class = "titlePayment">Payment Form</h1>
+        <section>
+            <h2 class = "account">Contact information</h2>
+                            <div class="inputs-row">
+                            <!-- Full Name -->
+                            <div class="input-wrapper">
+                                <label for="name"></label>
+                                <div class="container-user">
+                                <span class="icon">
+                                    <svg width="28" height="28">
+                                    <use xlink:href="#icon-user"></use>
+                                    </svg>
+                                </span>
+                                <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+                                </div>
+                            </div>
+                        <div class="inputs-wrapper">
+                        <!-- nickname-->
+                        <label for="name"> </label>
+                            <div class="container-user nickname">
+                                <span class="icon">
+                                    <svg width="28" height="28">
+                                        <use xlink:href="#icon-user"></use>
+                                    </svg>
+                                </span>
+                                <input type="text" placeholder="Nickname">
+                            </div> 
+                        </div>
+                     </div>
+                <label for="email">
+                    <div class = "container-user email">
+                        <span class="icon">
+                            <svg width="28" height="28">
+                                <use xlink:href="#icon-email"></use>
+                            </svg>
+                        </span>
+                                        <input type="email" name="email" placeholder="Email"/>
+                    </div>
+            </p>
+            <div>
+                <h3 class = "DateB"> Date of Birth</h3>
+
+            </div>
+            <h3> Payment Details</h2>
+            <p>
+                <label for ="card">
+                    <span>Card Number:</span>
+                </label>
+                <select id="card" name="card">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="amex">American Express</option>
+                </select>   
+            </p>
+            <p>
+                <label for="card_number">
+                    <span>Card Number:</span>
+                    <strong><abbr title="required">*</abbr></strong>
+                </label>
+                <input type="text" id="card_number" name="card_number"/>
+            </p>
+            <p>
+                <label for = "date">
+                    <span>Expiration Date:</span>
+                    <strong><abbr title="required">*</abbr></strong>
+                    <em>MM/AA</em>
+                </label>
+                <input type="date" id="date" name="date"/>
+            </p>
+            <p><button type="submit">PAY NOW</button></p>
+        </section>
+    </form>
+  </body>
+</html>
