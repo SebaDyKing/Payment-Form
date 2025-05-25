@@ -23,7 +23,6 @@ legend {
 
 .account{
   margin-left: 20px;
-
   font-size: 20px;
   color: rgb(0, 140, 196);
 }
@@ -32,11 +31,11 @@ legend {
   display : flex;
   width: 95%;
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto 30px ;
   justify-content: center;
   align-items: center;
   border : 3px solid #b6b3b3;
-   color: rgb(0, 140, 196);
+  color: rgb(0, 140, 196);
 }  
 
 .container-user{
@@ -69,7 +68,7 @@ legend {
 
 .inputs-row {
   display: flex;
-  gap: 0px; 
+  gap: 22px; 
   flex-wrap: wrap; 
 }
 .inputs-row p {
@@ -87,7 +86,6 @@ legend {
   margin-top: 10px;
   width: 100%;
   max-width: 91%;
-
   }
     
 .containerDateGender{
@@ -100,7 +98,7 @@ legend {
     height: 40px;
     max-width: 87%;
     text-align: center;
-    border : 2px solid #b6b3b3;
+    border : 1px solid #b6b3b3;
     border-radius: 4px;
     box-sizing: border-box;
   }
@@ -109,11 +107,12 @@ legend {
   .container-date.option .gender-box{
     width: 70%;
     height: 40px;
-    border : 3px solid #b6b3b3;
+    border : 1px solid #b6b3b3;
     border-radius: 4px;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     padding: 0 40px;
+
 }
 
 .date-gender {
@@ -126,12 +125,67 @@ legend {
   display: flex;
   gap: 30px;
   align-items: flex-start; 
+  
 }
-
-
 .gender-buttons{
   display: flex;
   gap: 0px;
   margin: 0 auto;
 }
+
+.gender-box:focus-within{
+  background-color: #3498db; 
+  color: rgb(255, 253, 253);             
+  border: none;              
+  padding: 10px 20px;        
+  border-radius: 5px;       
+}
+.DateB{
+  color : rgb(0, 140, 196);
+}
+
+.PaymentD{
+  margin-left: 30px;
+  color: rgb(0, 140, 196);
+}
+
+
+ .container-date.option .payment-box{
+    width: 100;
+    height: 40px;
+    border : 1px solid #b6b3b3;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 80px;
+    display : flex;
+    flex :1;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+ 
+  }
+
+.payment-box:focus-within{
+  background-color: #3498db; 
+  color: rgb(255, 253, 253);             
+  border: none;              
+  padding: 10px 20px;        
+  border-radius: 5px;       
+}
+
+.payment-buttons{
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  margin: 0 30px;
+}
+
+  .container-user.card{
+  margin-top: 15px;
+  width: 100%;
+  max-width: 91%;
+  margin-left: 30px;
+  }
+    
 
